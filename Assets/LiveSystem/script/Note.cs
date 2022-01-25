@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-
+    public int NoteSpeed;
 
     void Start()
     {
@@ -13,12 +13,13 @@ public class Note : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.down * Time.deltaTime);
+        transform.Translate(Vector3.down * Time.deltaTime * NoteSpeed);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("EndLine"));
+        Debug.Log(other.gameObject);
+        if (other.gameObject.CompareTag("EndLine"))
         {
             Destroy(this.gameObject);
             Debug.Log("good");
