@@ -13,7 +13,7 @@ public class Note : MonoBehaviour
 
     void Update()
     {
-
+        transform.Translate(Vector3.down * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,7 +22,6 @@ public class Note : MonoBehaviour
         {
             Destroy(this.gameObject);
             Debug.Log("good");
-            
         }
     }
 }
