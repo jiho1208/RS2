@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 400289794}
   - component: {fileID: 400289793}
   m_Layer: 5
-  m_Name: "\uC784\uC2DC \uCE90\uB9AD "
+  m_Name: "\uCE90\uB9AD "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -343,10 +343,27 @@ MonoBehaviour:
   Text: {fileID: 453874078}
   Name: {fileID: 543613961}
   BackGround:
-  - {fileID: 21300000, guid: 7f82e2730069c0b4c88c71c6ef982c07, type: 3}
-  - {fileID: 21300000, guid: 7e57977b7af4bfb48953b289cf927fb3, type: 3}
+  - {fileID: 21300000, guid: aea1c6306564fc947bbb0fbefc6a9ef4, type: 3}
+  - {fileID: 21300000, guid: c0db7acd77c324f43b4a6f6b2dc25475, type: 3}
+  - {fileID: 21300000, guid: 7ffb05cda00dc334da8c737016d79922, type: 3}
+  - {fileID: 21300000, guid: f5ee8fc1c12edaf44a3fd7a67b92b125, type: 3}
+  - {fileID: 21300000, guid: e19c326471529004b821488ed8d02ea7, type: 3}
+  - {fileID: 21300000, guid: 53a5d155cab74f644b93379d1fa28b1b, type: 3}
+  - {fileID: 21300000, guid: 98a5f8968cea8c34dae37f26d8c956ad, type: 3}
+  - {fileID: 21300000, guid: 89ab389625f9e2e41a4eb47760b3aa88, type: 3}
+  - {fileID: 21300000, guid: 70c6d9c20ee8fe942b38143ff7e3ad75, type: 3}
+  - {fileID: 21300000, guid: b1b0797b6185fc2429eb462dccecbb74, type: 3}
+  - {fileID: 21300000, guid: fbfe67b19e66d244e9bebd213a88e790, type: 3}
+  - {fileID: 21300000, guid: 61d98f08fd20101419331006acb3359c, type: 3}
+  - {fileID: 21300000, guid: aa7c32a97b704764381b70b752693277, type: 3}
+  - {fileID: 21300000, guid: d34d99d783147f74089b718d3d9cc201, type: 3}
+  - {fileID: 21300000, guid: 7486366bb5b07d54db017ac46312f01c, type: 3}
+  - {fileID: 21300000, guid: e877d19038d772941ba5e6ac26eb604e, type: 3}
+  - {fileID: 21300000, guid: 84c2a1a0f0f645347956fc6918194115, type: 3}
+  - {fileID: 21300000, guid: 544cefdd57011fd4db7d4e2445629ac5, type: 3}
   Back: {fileID: 1642692398}
   Character:
+  - {fileID: 21300000, guid: 19a192b2ca7cad048978efde9ed73a3c, type: 3}
   - {fileID: 21300000, guid: 5acc2a3e5cef5e1488df0a1b5e53c309, type: 3}
   - {fileID: 21300000, guid: 531c4e485e528d1428080943bcd9e370, type: 3}
   character: {fileID: 400289793}
@@ -972,7 +989,7 @@ GameObject:
   - component: {fileID: 1642692397}
   - component: {fileID: 1642692398}
   m_Layer: 5
-  m_Name: "\uC784\uC2DC\uBC30\uACBD "
+  m_Name: "\uBC30\uACBD "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -30,7 +30,7 @@ public class TextStory : MonoBehaviour
 
     IEnumerator Texttext()
     {
-        Back.sprite = BackGround[0];
+        Back.sprite = BackGround[17];
         character.sprite = Character[0];
         yield return StartCoroutine(NormalChat("다빈", "내 이름은 정다빈 록오프 고등학교의 학생"));
         yield return StartCoroutine(NormalChat("다빈", "록과 아이돌을 좋아해서 록 아이돌을 해보고자 학교에 들어오게 되었어."));
@@ -39,11 +39,13 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("다빈", "록과 아이돌을 사랑하는 부! 우리는 록 크라운 입니다!"));
         yield return StartCoroutine(NormalChat("다빈", "이번 이야기는 우리들에게 있어서 슬프고 아쉬운 기억이지만 \n잊어서는 안되는 이야기야."));
         yield return StartCoroutine(NormalChat("다빈", "그럼 시작해볼까?  Let's Rock~~~~~!"));
+        Back.sprite = BackGround[6];
         yield return StartCoroutine(NormalChat(" ", "(라이브 끝나는 소리)"));
         yield return StartCoroutine(NormalChat(" ", "두두두우웅 ..."));
         yield return StartCoroutine(NormalChat(" ", "(함성)"));
         yield return StartCoroutine(NormalChat("다빈", "여러분 고마워요!!!"));
         yield return StartCoroutine(NormalChat("RocK Crown", "지금까지 Rock Crown 이었습니다!!!"));
+        Back.sprite = BackGround[4];
         yield return StartCoroutine(NormalChat("지윤", "다들 제법인데? 이제 더 이상 내가 가르칠 것도 없겠어"));
         yield return StartCoroutine(NormalChat("설하", "No! 방심은 금물이라구요~!\n더 더 많이 연습해서 RocK Crown 을 빛내야져!"));
         yield return StartCoroutine(NormalChat("하룬", "후훗 맞아 방심은 절대 금물이지 \n지윤이가 우리한테 매번 했던 말이잖아 \n혹시 지윤이 너~ 좀 풀린거 아니야 ㅎㅎ?"));
@@ -64,6 +66,7 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("지윤", "다아 ~ 비인 ~ 야앙~? 빨리 뛰지 못해!!!!!!!!!!!!!!!!"));
         yield return StartCoroutine(NormalChat("다빈", "죄.. 죄... 죄송합니다!!!!!!!!!!!"));
         yield return StartCoroutine(NormalChat(" ", "(부아아아앙)"));
+        Back.sprite = BackGround[3];
         yield return StartCoroutine(NormalChat("다빈", "후아... 죽는줄 알았어... 이.. 이이 배신자들!!!"));
         yield return StartCoroutine(NormalChat("설하", "No~ This is competition \n우사인 볼트가 왜 빠른지 알아요?"));
         yield return StartCoroutine(NormalChat("아라", "배신자라니~ 우리는 그저 부활동에 충실했을 뿐이라고"));
@@ -103,6 +106,7 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("설하", "그럼 바로 작전회의로 들어가 보도록 하죠"));
         yield return StartCoroutine(NormalChat(" ", "(쿠우우 쿠쿠쿠쿵)"));
         yield return StartCoroutine(NormalChat("다빈", "에...? 우리 부실에 이런 기능이 있었던가...?"));
+        //작전회의  Back.sprite = BackGround[17];
         yield return StartCoroutine(NormalChat("설하", "작전회의를 Start 하기 앞서 플림이 얼마나 대단하고 \n유명한 무대인지부터 다시한번 각인하고 들어가죠. \n아라야 !"));
         yield return StartCoroutine(NormalChat("아라", "응! 여러분 여기 이 발표자료를 봐주세요. \n이건 작년에 개최된 제2회 플림의 우승자이신 \nFY(포유)의 결승전 영상이에요. "));
         yield return StartCoroutine(NormalChat("아라", "FY는 플림에 나오기 전까지 무명으로 활동하던 4인조 밴드였지만\n플림에서 우승한 후 부터는 우리나라 뿐만아닌 \n전세계가 주목하는 유명 그룹이 되었죠"));
