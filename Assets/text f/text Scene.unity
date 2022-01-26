@@ -361,6 +361,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e877d19038d772941ba5e6ac26eb604e, type: 3}
   - {fileID: 21300000, guid: 84c2a1a0f0f645347956fc6918194115, type: 3}
   - {fileID: 21300000, guid: 544cefdd57011fd4db7d4e2445629ac5, type: 3}
+  - {fileID: 21300000, guid: 4316de5d80766f44a9ee0838627a3dc7, type: 3}
   Back: {fileID: 1642692398}
   Character:
   - {fileID: 21300000, guid: 19a192b2ca7cad048978efde9ed73a3c, type: 3}
