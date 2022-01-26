@@ -39,13 +39,12 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("다빈", "록과 아이돌을 사랑하는 부! 우리는 록 크라운 입니다!"));
         yield return StartCoroutine(NormalChat("다빈", "이번 이야기는 우리들에게 있어서 슬프고 아쉬운 기억이지만 \n잊어서는 안되는 이야기야."));
         yield return StartCoroutine(NormalChat("다빈", "그럼 시작해볼까?  Let's Rock~~~~~!"));
-        Back.sprite = BackGround[6];
+        Back.sprite = BackGround[4];
         yield return StartCoroutine(NormalChat(" ", "(라이브 끝나는 소리)"));
         yield return StartCoroutine(NormalChat(" ", "두두두우웅 ..."));
         yield return StartCoroutine(NormalChat(" ", "(함성)"));
         yield return StartCoroutine(NormalChat("다빈", "여러분 고마워요!!!"));
         yield return StartCoroutine(NormalChat("RocK Crown", "지금까지 Rock Crown 이었습니다!!!"));
-        Back.sprite = BackGround[4];
         yield return StartCoroutine(NormalChat("지윤", "다들 제법인데? 이제 더 이상 내가 가르칠 것도 없겠어"));
         yield return StartCoroutine(NormalChat("설하", "No! 방심은 금물이라구요~!\n더 더 많이 연습해서 RocK Crown 을 빛내야져!"));
         yield return StartCoroutine(NormalChat("하룬", "후훗 맞아 방심은 절대 금물이지 \n지윤이가 우리한테 매번 했던 말이잖아 \n혹시 지윤이 너~ 좀 풀린거 아니야 ㅎㅎ?"));
@@ -78,6 +77,7 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("다빈", "으으 아무튼 오늘도 모두 수고하셨어요 \n오늘 Rock Crown 활동은 여기까..ㅈ"));
         yield return StartCoroutine(NormalChat("설하", "NOOOOOOOOOOO!!!!!! Way!!!!!!!!!!!! \nThis is real 입니까???"));
         yield return StartCoroutine(NormalChat("다빈", "깜짝이야... 무슨일이야 설하야?"));
+        Back.sprite = BackGround[18];
         yield return StartCoroutine(NormalChat("설하", "Everyone 모두 잠깐만 내 이야기를 listen 해줘..."));
         yield return StartCoroutine(NormalChat("하룬", "으응 알겠으니까 진정하구 "));
         yield return StartCoroutine(NormalChat("설하", "Oh... okay I'm sorry... 그럼 이야기 합니다?"));
@@ -85,6 +85,7 @@ public class TextStory : MonoBehaviour
         yield return StartCoroutine(NormalChat("설하", "20XX년 X월 XX일... 한국 최대의 뮤지션 선발 오디션...!\n\"제 3회 Please - Listen - Your - Music\" \n통칭 -PLYM(플림) 의 예선 대회가 있습니다..."));
         yield return StartCoroutine(NormalChat("설하", "자신의 음악을 세상에 알리고 싶다고 생각한다면 \n그 누구나 지원하실 수 있습니다.\n많은 참가 부탁드리며 플림에 대한 정보는 \n업데이트가 되는데로 계속 공지드릴 예정입니다. "));
         yield return StartCoroutine(NormalChat("설하", "플림에서 여러분들을 기다리고 있겠습니다..."));
+        Back.sprite = BackGround[3];
         yield return StartCoroutine(NormalChat(" ", " ●   ●   ● "));
         yield return StartCoroutine(NormalChat("지윤", "프... 플림?! 그 플림이란 말이야...?!"));
         yield return StartCoroutine(NormalChat("하룬", "오.. 오늘은 목이 덜 풀린 느낌이 드네...?\n라.라.라.라.라.라."));
