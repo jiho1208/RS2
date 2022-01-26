@@ -18,11 +18,9 @@ public class Note : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject);
         if (other.gameObject.CompareTag("EndLine"))
         {
             Destroy(this.gameObject);
-            Debug.Log("good");
         }
     }
 }
