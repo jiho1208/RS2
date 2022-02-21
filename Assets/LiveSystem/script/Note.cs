@@ -9,7 +9,7 @@ public class Note : MonoBehaviour
     public float Great = 0.9f;
     public float Good = 1.19f;
     public float Bad = 1.5f;
-
+    private float zPos;
     void Start()
     {
 
@@ -24,19 +24,20 @@ public class Note : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Decision"))
         {
-            if (Mathf.Abs(transform.position.z) <= Perfect)
+            zPos = Mathf.Abs(transform.position.z);
+            if (zPos <= Perfect)
             {
                 Debug.Log("Perfect");
             }
-            else if (Mathf.Abs(transform.position.z) <= Great)
+            else if (zPos <= Great)
             {
                 Debug.Log("Great");
             }
-            else if (Mathf.Abs(transform.position.z) <= Good)
+            else if (zPos <= Good)
             {
                 Debug.Log("Good");
             }
-            else if (Mathf.Abs(transform.position.z) <= Bad)
+            else if (zPos <= Bad)
             {
                 Debug.Log("Bad");
             }
