@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Note : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Note : MonoBehaviour
     public float Great = 0.9f;
     public float Good = 1.19f;
     public float Bad = 1.5f;
+    public List<Sprite> DisionImage;
+    public Image DisionUI;
     private float zPos;
     void Start()
     {
@@ -22,7 +25,7 @@ public class Note : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Decision"))
+        /*if (other.gameObject.CompareTag("Decision"))
         {
             zPos = Mathf.Abs(transform.position.z);
             if (zPos <= Perfect)
@@ -47,7 +50,7 @@ public class Note : MonoBehaviour
             }
             Destroy(this.gameObject);
         }
-
+*/
         if (other.gameObject.CompareTag("EndLine"))
         {
             Debug.Log("miss");
@@ -56,8 +59,15 @@ public class Note : MonoBehaviour
 
     }
 
+
     void Move()
     {
         transform.Translate(Vector3.down * Time.deltaTime * NoteSpeed);
     }
+
 }
+
+
+
+
+

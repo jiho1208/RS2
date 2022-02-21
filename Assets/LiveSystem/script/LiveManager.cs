@@ -45,8 +45,7 @@ public class LiveManager : MonoBehaviour
         {
             Decision[2].SetActive(true);
         }
-        
-        if (Input.GetKeyUp(KeyCode.Semicolon))
+        else if (Input.GetKeyUp(KeyCode.Semicolon))
         {
             Decision[2].SetActive(false);
         }

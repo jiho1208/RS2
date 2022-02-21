@@ -127,3 +127,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NoteSpeed: 25
+  Perfect: 0.49
+  Great: 0.9
+  Good: 1.19
+  Bad: 1.5
+  DisionImage:
+  - {fileID: 21300000, guid: a08a5d5a21727ff4ca9d3c70bdcf3e5c, type: 3}
+  - {fileID: 21300000, guid: 9fb8febf836a19c43a66ae8a4802aee0, type: 3}
+  - {fileID: 21300000, guid: 22378689de7986f4d9d294a65a3514eb, type: 3}
+  - {fileID: 21300000, guid: 2813ce13ae4f2a942bcde7b7113daf2e, type: 3}
+  - {fileID: 21300000, guid: 5fc60942745e2324c84423909de55546, type: 3}
+  DisionUI: {fileID: 0}
