@@ -67,9 +67,9 @@ public class LiveManager : MonoBehaviour
         WaitForSeconds Wait = new WaitForSeconds(SpawnDelay);
         while (true)
         {
-        int RandomSpawn = Random.Range(0, 4);
-        Instantiate(Note, SpawnPoint[RandomSpawn]);
-        yield return Wait;
+            int RandomSpawn = Random.Range(0, 4);
+            Instantiate(Note, SpawnPoint[RandomSpawn]);
+            yield return Wait;
         }
     }
 }

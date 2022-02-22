@@ -10,9 +10,6 @@ public class Note : MonoBehaviour
     public float Great = 0.9f;
     public float Good = 1.19f;
     public float Bad = 1.5f;
-    public List<Sprite> DisionImage;
-    public Image DisionUI;
-    private float zPos;
     void Start()
     {
 
