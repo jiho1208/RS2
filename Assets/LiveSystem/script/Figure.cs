@@ -11,13 +11,5 @@ public class Figure : MonoBehaviour
     public float Bad;
     public List<Sprite> DecisionImage;
     public Image DecisionUI;
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-        
-    }
 }
 
