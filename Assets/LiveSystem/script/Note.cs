@@ -20,41 +20,6 @@ public class Note : MonoBehaviour
         Move();
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        /*if (other.gameObject.CompareTag("Decision"))
-        {
-            zPos = Mathf.Abs(transform.position.z);
-            if (zPos <= Perfect)
-            {
-                Debug.Log("Perfect");
-            }
-            else if (zPos <= Great)
-            {
-                Debug.Log("Great");
-            }
-            else if (zPos <= Good)
-            {
-                Debug.Log("Good");
-            }
-            else if (zPos <= Bad)
-            {
-                Debug.Log("Bad");
-            }
-            else
-            {
-                Debug.Log("Miss");
-            }
-            Destroy(this.gameObject);
-        }
-*/
-        if (other.gameObject.CompareTag("EndLine"))
-        {
-            Debug.Log("miss");
-            Destroy(this.gameObject);
-        }
-
-    }
 
 
     void Move()

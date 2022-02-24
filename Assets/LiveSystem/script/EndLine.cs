@@ -15,7 +15,9 @@ public class EndLine : MonoBehaviour
     {
         if (other.gameObject.tag == "Note")
         {
+            Debug.Log("Miss");
             StartCoroutine(LiveManager.Instance.UIChange(0));
+            ScoreBoard.Instance.HPMinus(1);
         }
     }
 }

@@ -47,11 +47,13 @@ public class DecisionLine : MonoBehaviour
             {
                 Debug.Log("Bad");
                 StartCoroutine(LiveManager.Instance.UIChange(1));
+                ScoreBoard.Instance.HPMinus(1);
             }
             else
             {
                 Debug.Log("Miss");
                 StartCoroutine(LiveManager.Instance.UIChange(0));
+                ScoreBoard.Instance.HPMinus(1);
             }
             Destroy(other.gameObject);
         }

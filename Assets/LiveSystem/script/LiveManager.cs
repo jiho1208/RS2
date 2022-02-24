@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class LiveManager : MonoBehaviour
 {
-    public GameObject FigureObject;
     public static LiveManager Instance;
+    public GameObject FigureObject;
     public List<GameObject> Decision;
     public List<Transform> SpawnPoint;
     public GameObject Note;
@@ -18,7 +18,7 @@ public class LiveManager : MonoBehaviour
     void Start()
     {
         figure = FigureObject.GetComponent<Figure>();
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -40,7 +40,7 @@ public class LiveManager : MonoBehaviour
             Decision[0].GetComponent<BoxCollider>().enabled = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.A))
         {
             Decision[0].GetComponent<BoxCollider>().enabled = false;
         }
@@ -50,7 +50,7 @@ public class LiveManager : MonoBehaviour
             Decision[1].GetComponent<BoxCollider>().enabled = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKeyUp(KeyCode.S))
         {
             Decision[1].GetComponent<BoxCollider>().enabled = false;
         }
@@ -69,7 +69,7 @@ public class LiveManager : MonoBehaviour
             Decision[3].GetComponent<BoxCollider>().enabled = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.Quote))
+        else if (Input.GetKeyUp(KeyCode.Quote))
         {
             Decision[3].GetComponent<BoxCollider>().enabled = false;
         }
