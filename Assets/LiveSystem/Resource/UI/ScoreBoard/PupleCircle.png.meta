@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 00095540579f03d4b9f618c7e3bdc1aa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3906812272826087277
+    second: PupleCircle_0
+  - first:
+      213: 8623107343014366461
+    second: PupleCircle_1
+  - first:
+      213: -1665002870673606902
+    second: PupleCircle_2
+  - first:
+      213: -6111250098819132420
+    second: PupleCircle_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +113,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PupleCircle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 107
+        height: 107
+      alignment: 9
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3988012efe638c9c0800000000000000
+      internalID: -3906812272826087277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PupleCircle_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 107
+        width: 107
+        height: 107
+      alignment: 9
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc0f68f07e6ba770800000000000000
+      internalID: 8623107343014366461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PupleCircle_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 107
+        height: 107
+      alignment: 9
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a077e7fe5b8b4e8e0800000000000000
+      internalID: -1665002870673606902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PupleCircle_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 107
+        height: 107
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf39056f96a703ba0800000000000000
+      internalID: -6111250098819132420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

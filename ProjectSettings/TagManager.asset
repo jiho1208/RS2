@@ -7,6 +7,10 @@ TagManager:
   - EndLine
   - Decision
   - Note
+  - ShotNote
+  - LoogNote
+  - HardShotNote
+  - HardLoogNote
   layers:
   - Default
   - TransparentFX

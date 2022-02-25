@@ -13,11 +13,11 @@ public class EndLine : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Note")
-        {
-            Debug.Log("Miss");
-            StartCoroutine(LiveManager.Instance.UIChange(0));
-            ScoreBoard.Instance.HPMinus(1);
-        }
+
+        Debug.Log("Miss");
+        StartCoroutine(LiveManager.Instance.UIChange(0));
+        ScoreBoard.Instance.HPMinus(1);
+        Destroy(other.gameObject);
+
     }
 }

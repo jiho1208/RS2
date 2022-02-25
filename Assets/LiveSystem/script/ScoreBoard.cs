@@ -7,19 +7,23 @@ public class ScoreBoard : MonoBehaviour
 {
     public static ScoreBoard Instance;
     public int HP;
-    private Slider HPSlider;
+    public int MaxScore;
+    public Slider HPSlider;
+    public Image ScoreGauge;
+    public float Score = 0;
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
         }
-        HPSlider = GetComponent<Slider>();
     }
 
     void Update()
     {
         HPSlider.value = HP;
+        ScoreGauge.fillAmount = (Score * (0.25f / MaxScore)) + 0.5f;
+        GameClear();
     }
 
     public void HPMinus(int num)
@@ -28,6 +32,14 @@ public class ScoreBoard : MonoBehaviour
         if (HP == 0)
         {
             Debug.Log("응 죽어");
+        }
+    }
+
+    void GameClear()
+    {
+        if (Score >= MaxScore)
+        {
+            Debug.Log("어 클리어야");
         }
     }
 }
