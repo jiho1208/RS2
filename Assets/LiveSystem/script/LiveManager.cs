@@ -11,6 +11,10 @@ public class LiveManager : MonoBehaviour
     public List<Transform> SpawnPoint;
     public GameObject Note;
     public float SpawnDelay;
+    [SerializeField]
+    private List<SpriteRenderer> NoteRail;
+    [SerializeField]
+    private List<Sprite> NoteRailImage;
     private List<Sprite> DecisionImage;
     private Image DecisionUI;
     private Figure figure;
@@ -37,41 +41,41 @@ public class LiveManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Decision[0].GetComponent<BoxCollider>().enabled = true;
+            asdf(0, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            Decision[0].GetComponent<BoxCollider>().enabled = false;
+            asdf(0, false, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Decision[1].GetComponent<BoxCollider>().enabled = true;
+            asdf(1, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            Decision[1].GetComponent<BoxCollider>().enabled = false;
+            asdf(1, false, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Semicolon))
         {
-            Decision[2].GetComponent<BoxCollider>().enabled = true;
+            asdf(2, true, 1);
         }
         else if (Input.GetKeyUp(KeyCode.Semicolon))
         {
-            Decision[2].GetComponent<BoxCollider>().enabled = false;
+            asdf(2, false, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Quote))
         {
-            Decision[3].GetComponent<BoxCollider>().enabled = true;
+            asdf(3, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.Quote))
         {
-            Decision[3].GetComponent<BoxCollider>().enabled = false;
+            asdf(3, false, 0);
         }
     }
 
@@ -97,5 +101,11 @@ public class LiveManager : MonoBehaviour
             DecisionUI.GetComponent<Image>().color -= new Color(0, 0, 0, 0.1f);
             yield return wait;
         }
+    }
+
+    void asdf(int num, bool ison, int on)
+    {
+        Decision[num].GetComponent<BoxCollider>().enabled = ison;
+        NoteRail[num].sprite = NoteRailImage[on];
     }
 }

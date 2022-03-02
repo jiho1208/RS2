@@ -1404,6 +1404,14 @@ MonoBehaviour:
   - {fileID: 190719173}
   Note: {fileID: 6342504566213506786, guid: 7eebb0fcea361d04085396579dd41518, type: 3}
   SpawnDelay: 0.5
+  NoteRail:
+  - {fileID: 630887819}
+  - {fileID: 1828315249}
+  - {fileID: 266010491}
+  - {fileID: 573930159}
+  NoteRailImage:
+  - {fileID: 21300000, guid: f0fc36fae95c52f4881b1abfd8c76dce, type: 3}
+  - {fileID: 21300000, guid: fda566b98b7747944801b85bdf395fa3, type: 3}
 --- !u!4 &1481635649
 Transform:
   m_ObjectHideFlags: 0

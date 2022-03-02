@@ -31,13 +31,13 @@ public class DecisionLine : MonoBehaviour
             case "ShotNote":
                 NoteScore = 400;
                 break;
-            case "LoogNote":
+            case "LongNote":
                 NoteScore = 800;
                 break;
             case "HardShotNote":
                 NoteScore = 400;
                 break;
-            case "HardLoogNote":
+            case "HardLongNote":
                 NoteScore = 800;
                 break;
         }
