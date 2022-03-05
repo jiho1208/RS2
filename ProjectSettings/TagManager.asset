@@ -11,6 +11,7 @@ TagManager:
   - LoogNote
   - HardShotNote
   - HardLoogNote
+  - NoteRail
   layers:
   - Default
   - TransparentFX

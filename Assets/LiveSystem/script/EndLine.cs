@@ -8,16 +8,17 @@ public class EndLine : MonoBehaviour
 
     void Start()
     {
-
     }
 
     void OnTriggerEnter(Collider other)
     {
-
-        Debug.Log("Miss");
-        StartCoroutine(LiveManager.Instance.UIChange(0));
-        ScoreBoard.Instance.HPMinus(1);
-        Destroy(other.gameObject);
+        if (other.gameObject.tag == "ShotNote")
+        {
+            Debug.Log("Miss");
+            StartCoroutine(LiveManager.Instance.UIChange(0));
+            ScoreBoard.Instance.HPMinus(1);
+            Destroy(other.gameObject);
+        }
 
     }
 }

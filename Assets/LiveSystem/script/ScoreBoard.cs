@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class ScoreBoard : MonoBehaviour
 {
     public static ScoreBoard Instance;
-    public int HP;
+    public float FullHP;
     public int MaxScore;
-    public Slider HPSlider;
+    public Image HPBar;
     public Image ScoreGauge;
     public float Score = 0;
+    private float HP = 30;
     void Start()
     {
         if (Instance == null)
@@ -21,7 +22,7 @@ public class ScoreBoard : MonoBehaviour
 
     void Update()
     {
-        HPSlider.value = HP;
+        HPBar.fillAmount = HP * (1 / FullHP);
         ScoreGauge.fillAmount = (Score * (0.25f / MaxScore)) + 0.5f;
         GameClear();
     }
