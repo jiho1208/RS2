@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class NoteRail : MonoBehaviour
 {
+    public int NoteSpeed;
     void Start()
     {
+        
     }
 
     void Update()
@@ -13,5 +15,14 @@ public class NoteRail : MonoBehaviour
 
     }
 
-    
+    void FixedUpdate()
+    {
+        Move();
+    }
+
+    void Move()
+    {
+        transform.Translate(Vector3.down * Time.deltaTime * NoteSpeed);
+    }
+
 }
