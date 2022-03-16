@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class NoteRail : MonoBehaviour
 {
-    public int NoteSpeed;
+    LineRenderer line;
+    [SerializeField]
+    List<Transform> notetransform;
+    List<Vector3> notevector;
     void Start()
     {
-        
+        line = GetComponent<LineRenderer>();
+        notevector[0] = notetransform[0].position;
+        notevector[1] = notetransform[1].position;
     }
 
     void Update()
@@ -22,7 +27,8 @@ public class NoteRail : MonoBehaviour
 
     void Move()
     {
-        transform.Translate(Vector3.down * Time.deltaTime * NoteSpeed);
+        line.SetPosition(0, notevector[0]);
+        line.SetPosition(1, notevector[1]);
     }
 
 }
