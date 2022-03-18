@@ -7,6 +7,7 @@ public class NoteRail : MonoBehaviour
     LineRenderer line;
     [SerializeField]
     List<Transform> notetransform;
+    [SerializeField]
     List<Vector3> notevector = new List<Vector3>();
     void Start()
     {
@@ -17,11 +18,12 @@ public class NoteRail : MonoBehaviour
 
     void Update()
     {
-        Move();
+        Setpos();
     }
 
-    void Move()
+    void Setpos()
     {
+        Debug.Log("asdf");
         line.SetPosition(0, notevector[0]);
         line.SetPosition(1, notevector[1]);
     }
