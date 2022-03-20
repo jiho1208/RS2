@@ -7,13 +7,10 @@ public class NoteRail : MonoBehaviour
     LineRenderer line;
     [SerializeField]
     List<Transform> notetransform;
-    [SerializeField]
-    List<Vector3> notevector = new List<Vector3>();
+
     void Start()
     {
         line = GetComponent<LineRenderer>();
-        notevector.Add(notetransform[0].position);
-        notevector.Add(notetransform[1].position);
     }
 
     void Update()
@@ -23,9 +20,8 @@ public class NoteRail : MonoBehaviour
 
     void Setpos()
     {
-        Debug.Log("asdf");
-        line.SetPosition(0, notevector[0]);
-        line.SetPosition(1, notevector[1]);
+        line.SetPosition(0, notetransform[0].position);
+        line.SetPosition(1, notetransform[1].position);
     }
 
 }
