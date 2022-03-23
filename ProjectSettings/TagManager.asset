@@ -8,10 +8,11 @@ TagManager:
   - Decision
   - Note
   - ShotNote
-  - LoogNote
   - HardShotNote
   - HardLoogNote
   - NoteRail
+  - LongNote
+  - LoogNote
   layers:
   - Default
   - TransparentFX

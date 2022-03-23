@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Note : MonoBehaviour
 {
     public int NoteSpeed;
+    public bool isdestory;
 
     void Start()
     {
@@ -24,6 +25,13 @@ public class Note : MonoBehaviour
         transform.Translate(Vector3.down * Time.deltaTime * NoteSpeed);
     }
 
+    void Destroy()
+    {
+        if (isdestory)
+        {
+
+        }
+    }
 }
 
 

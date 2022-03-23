@@ -74,6 +74,13 @@ public class DecisionLine : MonoBehaviour
             StartCoroutine(LiveManager.Instance.UIChange(0));
             ScoreBoard.Instance.HPMinus(1);
         }
-        Destroy(other.gameObject);
+
+        if (other.gameObject.tag == "LongNote")
+        {
+            Vector3 pos = other.gameObject.transform.position;
+            other.gameObject.GetComponent<Note>().NoteSpeed = 0;
+            other.gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
+        }
+        //Destroy(other.gameObject);
     }
 }
