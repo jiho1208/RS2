@@ -2333,7 +2333,7 @@ GameObject:
   - component: {fileID: 7427742701908066484}
   - component: {fileID: 7427742701908066489}
   m_Layer: 0
-  m_Name: ShotNote (1)
+  m_Name: BackNote
   m_TagString: LongNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,7 +2461,7 @@ GameObject:
   - component: {fileID: 7658855856271024498}
   - component: {fileID: 7658855856271024511}
   m_Layer: 0
-  m_Name: ShotNote
+  m_Name: FrontNote
   m_TagString: LongNote
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

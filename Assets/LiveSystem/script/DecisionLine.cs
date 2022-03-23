@@ -28,13 +28,13 @@ public class DecisionLine : MonoBehaviour
     {
         switch (other.gameObject.tag)
         {
-            case "ShotNote":
+            case "ShortNote":
                 NoteScore = 400;
                 break;
             case "LongNote":
                 NoteScore = 800;
                 break;
-            case "HardShotNote":
+            case "HardShortNote":
                 NoteScore = 400;
                 break;
             case "HardLongNote":
@@ -81,6 +81,6 @@ public class DecisionLine : MonoBehaviour
             other.gameObject.GetComponent<Note>().NoteSpeed = 0;
             other.gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
         }
-        //Destroy(other.gameObject);
+        other.gameObject.GetComponent<LongNote>().isdestory = true;
     }
 }
