@@ -81,6 +81,5 @@ public class DecisionLine : MonoBehaviour
             other.gameObject.GetComponent<Note>().NoteSpeed = 0;
             other.gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
         }
-        other.gameObject.GetComponent<LongNote>().isdestory = true;
     }
 }

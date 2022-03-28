@@ -12,13 +12,22 @@ public class LongNote : Note
 
     void Update()
     {
+        Move();
+        if(transform.position.z == 0)
+        {
+            isdestory = true;
+        }
         if (isdestory)
         {
             NoteDestroy();
         }
     }
+    void OnDestroy()
+    {
+        NoteDestroy();
+    }
 
-    void NoteDestroy()
+    public void NoteDestroy()
     {
         Destroy(transform.parent.gameObject);
     }
