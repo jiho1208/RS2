@@ -10,6 +10,7 @@ TagManager:
   - NoteRail
   - LongNote
   - ShortNote
+  - BackNote
   layers:
   - Default
   - TransparentFX

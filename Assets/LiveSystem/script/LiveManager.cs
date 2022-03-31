@@ -8,6 +8,7 @@ public class LiveManager : MonoBehaviour
     public static LiveManager Instance;
     public GameObject FigureObject;
     public List<GameObject> Decision;
+    public List<GameObject> Decision2;
     public List<Transform> SpawnPoint;
     public GameObject Note;
     public float SpawnDelay;
@@ -41,41 +42,45 @@ public class LiveManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            asdf(0, true, 1);
+            LineOn(0, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            asdf(0, false, 0);
+            LineOn(0, false, 0);
+            StartCoroutine(LongOn(0));
         }
 
         if (Input.GetKeyDown(KeyCode.S))
         {
-            asdf(1, true, 1);
+            LineOn(1, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            asdf(1, false, 0);
+            LineOn(1, false, 0);
+            StartCoroutine(LongOn(1));
         }
 
         if (Input.GetKeyDown(KeyCode.Semicolon))
         {
-            asdf(2, true, 1);
+            LineOn(2, true, 1);
         }
         else if (Input.GetKeyUp(KeyCode.Semicolon))
         {
-            asdf(2, false, 0);
+            LineOn(2, false, 0);
+            StartCoroutine(LongOn(2));
         }
 
         if (Input.GetKeyDown(KeyCode.Quote))
         {
-            asdf(3, true, 1);
+            LineOn(3, true, 1);
         }
 
         else if (Input.GetKeyUp(KeyCode.Quote))
         {
-            asdf(3, false, 0);
+            LineOn(3, false, 0);
+            StartCoroutine(LongOn(3));
         }
     }
 
@@ -103,9 +108,16 @@ public class LiveManager : MonoBehaviour
         }
     }
 
-    void asdf(int num, bool ison, int on)
+    void LineOn(int num, bool ison, int on)
     {
         Decision[num].GetComponent<BoxCollider>().enabled = ison;
         NoteRail[num].sprite = NoteRailImage[on];
+    }
+
+    IEnumerator LongOn(int num)
+    {
+        Decision2[num].GetComponent<BoxCollider>().enabled = true;
+        yield return new WaitForSeconds(0.1f);
+        Decision2[num].GetComponent<BoxCollider>().enabled = false;
     }
 }
