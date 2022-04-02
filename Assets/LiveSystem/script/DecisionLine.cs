@@ -43,43 +43,44 @@ public class DecisionLine : MonoBehaviour
         }
 
         zPos = Mathf.Abs(other.transform.position.z);
-        if (zPos <= Perfect)
+        Decision(zPos);
+        if (other.gameObject.tag == "LongNote")
         {
-            Debug.Log("Perfect");
+            Vector3 pos = other.gameObject.transform.position;
+            other.gameObject.GetComponent<Note>().NoteSpeed = 0;
+            other.gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
+        }
+        other.gameObject.GetComponent<Note>().isdestroy = true;
+    }
+
+    protected void Decision(float zpos)
+    {
+
+        if (zpos <= Perfect)
+        {
             StartCoroutine(LiveManager.Instance.UIChange(4));
             ScoreBoard.Instance.Score += NoteScore * 2;
         }
-        else if (zPos <= Great)
+        else if (zpos <= Great)
         {
-            Debug.Log("Great");
             StartCoroutine(LiveManager.Instance.UIChange(3));
             ScoreBoard.Instance.Score += NoteScore * 1.5f;
         }
-        else if (zPos <= Good)
+        else if (zpos <= Good)
         {
-            Debug.Log("Good");
             StartCoroutine(LiveManager.Instance.UIChange(2));
             ScoreBoard.Instance.Score += NoteScore * 1;
         }
-        else if (zPos <= Bad)
+        else if (zpos <= Bad)
         {
-            Debug.Log("Bad");
             StartCoroutine(LiveManager.Instance.UIChange(1));
             ScoreBoard.Instance.HPMinus(1);
             ScoreBoard.Instance.Score += NoteScore * 0.5f;
         }
         else
         {
-            Debug.Log("Miss");
             StartCoroutine(LiveManager.Instance.UIChange(0));
             ScoreBoard.Instance.HPMinus(1);
-        }
-
-        if (other.gameObject.tag == "LongNote")
-        {
-            Vector3 pos = other.gameObject.transform.position;
-            other.gameObject.GetComponent<Note>().NoteSpeed = 0;
-            other.gameObject.transform.position = new Vector3(pos.x, pos.y, 0);
         }
     }
 }

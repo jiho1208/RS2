@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Note : MonoBehaviour
 {
     public int NoteSpeed;
-    public bool isdestory;
+    public bool isdestroy;
 
     void Start()
     {

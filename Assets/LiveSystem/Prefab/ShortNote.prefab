@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6342504566213506797}
   - component: {fileID: 6342504566213506799}
   - component: {fileID: 6342504566213506798}
-  - component: {fileID: 6342504566213506793}
+  - component: {fileID: -5539270836451860958}
   m_Layer: 0
   m_Name: ShortNote
   m_TagString: ShortNote
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6342504566213506793
+--- !u!114 &-5539270836451860958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,8 +123,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6342504566213506786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df56d39232740ed4f94f9166a6a85d23, type: 3}
+  m_Script: {fileID: 11500000, guid: bd2c0bcdee8688242aff13fd946e0fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NoteSpeed: 25
-  isdestory: 0
+  isdestroy: 0

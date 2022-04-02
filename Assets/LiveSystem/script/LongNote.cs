@@ -15,9 +15,9 @@ public class LongNote : Note
         Move();
         if(transform.position.z == 0)
         {
-            isdestory = true;
+            isdestroy = true;
         }
-        if (isdestory)
+        if (isdestroy)
         {
             NoteDestroy();
         }
