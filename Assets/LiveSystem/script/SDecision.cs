@@ -8,7 +8,8 @@ public class SDecision : DecisionLine
     {
         if (other.gameObject.tag == "LongNote")
         {
-            Decision(other.gameObject.transform.parent.GetChild(0).position.z);
+            Decision(Mathf.Abs(other.gameObject.transform.parent.GetChild(0).position.z));
+            Destroy(other.gameObject);
         }
     }
 }

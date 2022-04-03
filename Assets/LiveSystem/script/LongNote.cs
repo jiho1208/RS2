@@ -13,10 +13,6 @@ public class LongNote : Note
     void Update()
     {
         Move();
-        if(transform.position.z == 0)
-        {
-            isdestroy = true;
-        }
         if (isdestroy)
         {
             NoteDestroy();
@@ -30,6 +26,14 @@ public class LongNote : Note
     public void NoteDestroy()
     {
         Destroy(transform.parent.gameObject);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "EndLine")
+        {
+            isdestroy = true;
+        }
     }
 
 

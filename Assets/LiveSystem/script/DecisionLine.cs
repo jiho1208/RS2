@@ -26,6 +26,7 @@ public class DecisionLine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.tag == "BackNote") return;
         switch (other.gameObject.tag)
         {
             case "ShortNote":
