@@ -254,7 +254,116 @@ public class TextStory : MonoBehaviour
             yield return StartCoroutine(NormalChat("하룬", "하나로 !"));
             yield return StartCoroutine(NormalChat("지윤", "모아서 !"));
             yield return StartCoroutine(NormalChat("아라", "닿아라 !!!"));
+            Back.sprite = BackGround[1];
+            character.sprite = Character[1];
         }
+        else if (storyN == 3)
+        {
+            Back.sprite = BackGround[4];
+            character.sprite = Character[1];
+            yield return StartCoroutine(NormalChat("지윤", "하나 둘 셋 넷 다섯 여섯 ..."));
+            yield return StartCoroutine(NormalChat("다빈", "하아...하아...지금 까지 했던 연습중에 뭔가 가장 잘 되지 않았어??"));
+            yield return StartCoroutine(NormalChat("하룬", "응 ! 내가 생각해도 괜찮았던 것 같아 ! "));
+            yield return StartCoroutine(NormalChat("설하", "Sure ! 5개월도 넘게 연습해왔는 걸요 !"));
+            yield return StartCoroutine(NormalChat("아라", "모두 수고했어 역시 노력은 배신하지 않는 법이야 !"));
+            yield return StartCoroutine(NormalChat("다빈", "후후훗 !"));
+            yield return StartCoroutine(NormalChat("설하", "저는 우리들의 level up 을 느꼈어요...! 이건 가능합니다 !"));
+            yield return StartCoroutine(NormalChat("하룬", "응 나도 마찬가지야 ! \n처음에는 플림의 수준에 벌벌 떨던 나였다면 지금의 나는 뭐랄까...달라 !"));
+            yield return StartCoroutine(NormalChat("다빈", "으으읏 ! 좋아 노려보는거야 플림 !!!"));
+            yield return StartCoroutine(NormalChat("지윤", "아니요 !!!"));
+            yield return StartCoroutine(NormalChat("아라", "네?! 아직도 잘 안넘어가는 부분이 있나요...?!"));
+            yield return StartCoroutine(NormalChat("지윤", "아니요 ! 댄스는 이제 완벽해요 지금의 감을 잃지 않는 이상 이제 댄스와 노래는 \n실전만 남았겠죠. 그치만 록 크라운 에겐 아직 한가지 부족한게 있어요! 그것은...!"));
+            yield return StartCoroutine(NormalChat("다빈", "그거슨...!"));
+            yield return StartCoroutine(NormalChat("지윤", "그거스은...!"));
+            yield return StartCoroutine(NormalChat("다빈,아라", "그거스으은...!"));
+            yield return StartCoroutine(NormalChat("지윤", "바로 팀워크와 서로를 믿는 신뢰 입니다."));
+            yield return StartCoroutine(NormalChat("다빈,아라,설하,하룬", "팀원크와...신뢰?"));
+            yield return StartCoroutine(NormalChat("지윤", "네 맞아요 예시를 하나 들어드릴께요. \n포유의 멤버들은 서로 성격이 안맞기로 유명하죠? \n그런데 그녀들이 무대위에서 마치 모두가 하나인 듯이 \n움직일 수 있는 이유가 무엇일까요?"));
+            yield return StartCoroutine(NormalChat("다빈", "아마도...그만큼 연습을 했으니까?"));
+            yield return StartCoroutine(NormalChat("지윤", "물론 연습도 틀린 말은 아니겠죠 \n하지만 그녀들의 무대는 연습만으로 완성되는게 아니에요."));
+            yield return StartCoroutine(NormalChat("설하", "what...?"));
+            yield return StartCoroutine(NormalChat("지윤", "그녀들의 무대의 완성은 팀워크 입니다. 아무리 연습을 많이 한다고 하더라도 \n팀워크가 무너진다면 포유의 무대는 빛날 수 없었을거에요."));
+            yield return StartCoroutine(NormalChat("하룬", " 확실히... 포유는 지금껏 한명이라도 박자가 어긋나면 무대의 완성도가 \n확 떨어질 수 있는 하이리스크 곡을 선호해왔어...그럼에도 실패한적은..."));
+            yield return StartCoroutine(NormalChat("지윤", "단 한번도 없었죠. 플로라도 마찬가지에요. 2인조인데도 무대가 가득 차 있는 듯한 \n느낌을 받는건 그녀들의 신뢰와 팀워크가 크게 작용하기 때문이죠."));
+            yield return StartCoroutine(NormalChat("지윤", "한명이 오른쪽을 채운다면 남은 한명이 과감하게 왼쪽을 채워준다. 이 이상은 \n말 안해도 다들 이해하셨겠죠 ? "));
+            yield return StartCoroutine(NormalChat("다빈", "꿀꺽...네.."));
+            yield return StartCoroutine(NormalChat("아라", "그치만 무슨 연습을 해야...신뢰와 팀워크를 키울 수 있을까요..."));
+            yield return StartCoroutine(NormalChat("설하", "새로운 연습을 도입하기엔 이미 너무 늦었어요...플림의 예선까지 이제 남은 time은"));
+            yield return StartCoroutine(NormalChat("하룬", "2주...!"));
+            yield return StartCoroutine(NormalChat("지윤", "후훗 뭘 그렇게 어렵게 생각하나요? 이번주 토요일 ! 합숙을 실시하겠습니다 !"));
+            yield return StartCoroutine(NormalChat("아라,다빈,하룬", "합...숙?"));
+            yield return StartCoroutine(NormalChat("지윤", "장소는 이곳 학교, 복장은 자유에요 어때요?"));
+            yield return StartCoroutine(NormalChat("다빈", "헤에 재밌겠는데요?!"));
+            yield return StartCoroutine(NormalChat("아라", "응 ! 학교에서 합숙이란건 로망이었어요 !"));
+            yield return StartCoroutine(NormalChat("하룬", "나도 괜찮아 !"));
+            yield return StartCoroutine(NormalChat("지윤", "오케이 그럼 설하는 어때?"));
+            yield return StartCoroutine(NormalChat("설하", "느느느느느느늣...! Oh ! My ! God ! 합숙이라구요?!!!!!"));
+            yield return StartCoroutine(NormalChat("지윤", "네..네.. 합숙..."));
+            yield return StartCoroutine(NormalChat("설하", "저 합숙은 한번도 해본적이 없었어요 ! elementary school 때는 정기적으로 \n아버지의 일때문에 전학을 다녔어야 했었고 "));
+            yield return StartCoroutine(NormalChat("설하", "middle school 때는 친구 사귀기에 실패해 버려서..."));
+            yield return StartCoroutine(NormalChat("다빈", "설하야...점점...너무 슬퍼지는데?..."));
+            yield return StartCoroutine(NormalChat("설하", "But ! 괜찮습니다 ! 바로 이곳 Rock off high school 에서는 할 수 있게 \n되었으니까요 ! 뭘 챙겨갈까...! 아 ! 이것도 챙겨야 하구 저것두 챙겨야 하구... \n 헤헤헤..."));
+            yield return StartCoroutine(NormalChat("지윤", "뭐...아무튼 설하도 오케이인 것 같네 그럼 오늘은 해산하고 토요일 9시에 봐요 !"));
+            yield return StartCoroutine(NormalChat("모두", "오우 !"));
+            Back.sprite = BackGround[13];
+            yield return StartCoroutine(NormalChat("지윤", "후...그럼 짐은 이정도로 된 것 같구...그래도 내가 미리 가서 준비를 해놔야겠지? \n한 1시간 정도 일찍 가야겠다."));
+            Back.sprite = BackGround[0];
+            yield return StartCoroutine(NormalChat("지윤", "Z..z...z "));
+            yield return StartCoroutine(NormalChat("   ", "(지윤이는 누우면 바로 잘 수 있다 !)"));
+            Back.sprite = BackGround[14];
+            yield return StartCoroutine(NormalChat("   ", " 굿 ~ 모 ~ 닝 ~ 띵 띵 띵 ~~ "));
+            yield return StartCoroutine(NormalChat("지윤", "흐음...아읏..시끄러...벌써 아침이야? 잠깐...자..자자잠깐만 !!! \n여..여덟시 사..사삼십뿌우운?!! 부재중 알람 6..개...망했군.."));
+            yield return StartCoroutine(NormalChat("   ", "( 쿠당탕탕당 )"));
+            yield return StartCoroutine(NormalChat("지윤이 어머니", "어머 얘가 왠일로 이렇게 시끄럽지..."));
+            yield return StartCoroutine(NormalChat("지윤", "엄마 ! 오늘 학교 부원들이랑 합숙을 하기로 해서 학교에서 자고 올께요 !"));
+            yield return StartCoroutine(NormalChat("지윤이 어머니", "어..그..그래 많이 들떴나 보구나 후훗"));
+            yield return StartCoroutine(NormalChat("지윤", "아...아니에요 ! 그냥 빨리 가야하니까...그럼 다녀오겠습니다..!"));
+            yield return StartCoroutine(NormalChat("지윤이 어머니", "지윤아 즐겁니?"));
+            yield return StartCoroutine(NormalChat("지윤", "네...?"));
+            yield return StartCoroutine(NormalChat("지윤이 어머니", "그냥 지윤이 표정이 몇개월 전보다 더 밝아진 것 같아서 ㅎ 지금 하는 일은 즐겁니?"));
+            yield return StartCoroutine(NormalChat("지윤", "...응 다녀올께요 !"));
+            yield return StartCoroutine(NormalChat("    ", "(철컥)"));
+            yield return StartCoroutine(NormalChat("지윤이 어머니", "어머 ~ 남자친구라도 생긴걸까나 후후후"));
+            Back.sprite = BackGround[15];
+            yield return StartCoroutine(NormalChat("지윤", "하아...하아...다행이 아직 아무도 안왔나 보네...그럼 슬슬 연락을..후우..\n아..아냐 그전에 좀 앉아야겠어…"));
+            yield return StartCoroutine(NormalChat("설하", "호오...호오...It's...very cold....드드드드ㅡ드드드듣...."));
+            yield return StartCoroutine(NormalChat("지윤", "...?"));
+            Back.sprite = BackGround[16];
+            yield return StartCoroutine(NormalChat("설하", "Oh...지윤 senpai...좋은 아침이에요..."));
+            yield return StartCoroutine(NormalChat("지윤", "...설하야?"));
+            yield return StartCoroutine(NormalChat("설하", "지윤 선배...eyes...계속 감겨져요...갑자기 졸리네요우..."));
+            yield return StartCoroutine(NormalChat("지윤", "설하야 !!!!!"));
+            yield return StartCoroutine(NormalChat("설하", "oh...눈 앞에 돌아가신 grandmother 이 보여요...하아…"));
+            yield return StartCoroutine(NormalChat("지윤", "설하야 !!! 눈떠 여기서 자면 안돼 !!"));
+            Back.sprite = BackGround[15];
+            yield return StartCoroutine(NormalChat("다빈,아라", "어? 지윤선배 ! 설하야 우리왔어 !"));
+            yield return StartCoroutine(NormalChat("다빈", "이야 ~ \"합숙\"이 너무 기대되서 늦잠 자버렸지 뭐야...~!"));
+            yield return StartCoroutine(NormalChat("아라", "난 늦잠 안잤거든? 다빈이 집에 갔더니 아직 자고 있다고 하질 않나...정말 못살아 !"));
+            yield return StartCoroutine(NormalChat("다빈", "헤에 ~"));
+            yield return StartCoroutine(NormalChat("설하", "(쫑긋) hab...sook...?"));
+            yield return StartCoroutine(NormalChat("지윤", "얘...얘들아...설하가...설하가...!"));
+            yield return StartCoroutine(NormalChat("다빈", "에? 설하가 왜요?"));
+            yield return StartCoroutine(NormalChat("지윤", "설하가...흐아앙 설하가...끄읍...주..죽었…"));
+            yield return StartCoroutine(NormalChat("설하", " Oh !!! 합숙 ! 그래요 합숙이에요 ! 합숙이 너무 기대되서 합숙이 너무 하고싶어서 ! \n나는 여기 있었던 겁니다!!!"));
+            yield return StartCoroutine(NormalChat("지윤", "에...? 설하야?"));
+            yield return StartCoroutine(NormalChat("설하", "지윤선배 ! 왜 그렇게 침울한 표정으로 바닥에 앉아계시나요?"));
+            yield return StartCoroutine(NormalChat("지윤", ". . ."));
+            yield return StartCoroutine(NormalChat("아라", "다빈아...이거 뭔가 위험한 상황인 것 같아.."));
+            yield return StartCoroutine(NormalChat("다빈", "으응...나도 직감적으로 느껴져..."));
+            yield return StartCoroutine(NormalChat("아라,다빈", "서..선배 저희 잠시 화장실좀 하하하...;;"));
+            yield return StartCoroutine(NormalChat("설하", "으음...?"));
+            yield return StartCoroutine(NormalChat("지윤", "서얼~하~야앙? 우리 잠깐 얘기좀 할까요?"));
+            yield return StartCoroutine(NormalChat("설하", "에...? 선배 왜 그..그렇게 화가 나셨ㅈ..죠? 헤..헤.."));
+            yield return StartCoroutine(NormalChat("지윤", "설하야아아아아아아앙 !!!!!!!!!!!!!!!!!!!!!!"));
+            yield return StartCoroutine(NormalChat("설하", "끼아아아아아아아아악 !!!!!"));
+            yield return StartCoroutine(NormalChat("다빈,아라", "내가 그날 들었던 지윤선배의 외침은 화장실까지 들렸으며 그 소리는 마치...\n티라노사우루스의 포효와도 같은 소리였다..."));
+            yield return StartCoroutine(NormalChat("    ", "(그 시각 멀리서 오고 있던 하룬)"));
+            yield return StartCoroutine(NormalChat("지윤", "설하야아아아아아아앙 !!!!!!!!!!!!!!!!!!!!!!"));
+            yield return StartCoroutine(NormalChat("하룬", "으..응? 어디서 지윤이 목소리가..."));
+            yield return StartCoroutine(NormalChat("다빈", "그렇게 플림을 앞둔 우리의 첫 합숙이 시작되었다."));
+        }
+    
+    }
 
         IEnumerator NormalChat(string narrator, string narration)
         {
@@ -275,5 +384,5 @@ public class TextStory : MonoBehaviour
                 yield return null;
             }
         }
-    }
+    
 }
