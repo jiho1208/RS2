@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10593d2506163d045b087b82bf716107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyN: 3
+  storyN: 4
   Text: {fileID: 453874078}
   Name: {fileID: 543613961}
   BackGround:
@@ -350,7 +350,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2d84e6f90743cb24daf1abaf0ab8fa05, type: 3}
   - {fileID: 21300000, guid: ac3e7ad35d1d77743b6c3fdd1b1393a6, type: 3}
   - {fileID: 21300000, guid: fefbfacd162ec5d4aa9dc6032321e3b5, type: 3}
-  - {fileID: 21300000, guid: 544cefdd57011fd4db7d4e2445629ac5, type: 3}
+  - {fileID: 21300000, guid: 75e3218232bc2e34d8e600b4958ff813, type: 3}
   - {fileID: 21300000, guid: 25397fb9c0c4b8246b6f8b58b1edee25, type: 3}
   - {fileID: 21300000, guid: 544cefdd57011fd4db7d4e2445629ac5, type: 3}
   - {fileID: 21300000, guid: 6a238308411b63b498665ca143c0c834, type: 3}
