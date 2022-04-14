@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10593d2506163d045b087b82bf716107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyN: 4
+  storyN: 5
   Text: {fileID: 453874078}
   Name: {fileID: 543613961}
   BackGround:
