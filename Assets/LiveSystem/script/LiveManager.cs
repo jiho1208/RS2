@@ -12,6 +12,7 @@ public class LiveManager : MonoBehaviour
     public List<Transform> SpawnPoint;
     public GameObject Note;
     public float SpawnDelay;
+    public int DNum; 
     [SerializeField]
     private List<SpriteRenderer> NoteRail;
     [SerializeField]

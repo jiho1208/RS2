@@ -59,27 +59,32 @@ public class DecisionLine : MonoBehaviour
 
         if (zpos <= Perfect)
         {
+            LiveManager.Instance.DNum = 1;
             StartCoroutine(LiveManager.Instance.UIChange(4));
             ScoreBoard.Instance.Score += NoteScore * 2;
         }
         else if (zpos <= Great)
         {
+            LiveManager.Instance.DNum = 2;
             StartCoroutine(LiveManager.Instance.UIChange(3));
             ScoreBoard.Instance.Score += NoteScore * 1.5f;
         }
         else if (zpos <= Good)
         {
+            LiveManager.Instance.DNum = 3;
             StartCoroutine(LiveManager.Instance.UIChange(2));
             ScoreBoard.Instance.Score += NoteScore * 1;
         }
         else if (zpos <= Bad)
         {
+            LiveManager.Instance.DNum = 4;
             StartCoroutine(LiveManager.Instance.UIChange(1));
             ScoreBoard.Instance.HPMinus(1);
             ScoreBoard.Instance.Score += NoteScore * 0.5f;
         }
         else
         {
+            LiveManager.Instance.DNum = 5;
             StartCoroutine(LiveManager.Instance.UIChange(0));
             ScoreBoard.Instance.HPMinus(1);
         }
